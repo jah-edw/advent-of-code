@@ -1,6 +1,11 @@
 const fs = require('fs')
-let contentString = fs.readFileSync("data.txt").toString()
-let contentArr = contentString.split('\n').map((i) => Number(i));
+
+function dataToArr(filePathString){
+    let contentString = fs.readFileSync(filePathString).toString();
+    let contentArr = contentString.split('\n').map((i) => Number(i));
+    return contentArr
+}
+
 
 function counter(array) {
     let count = 0;
@@ -10,6 +15,5 @@ function counter(array) {
     return count 
 }
 
-
-console.log(counter(contentArr))
-
+module.exports = {counter, dataToArr};
+ 
