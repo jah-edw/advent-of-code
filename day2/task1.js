@@ -25,3 +25,5 @@ function depthPerception(fileNameString) {
 }
 
 console.log(depthPerception("data.txt"))
+
+module.exports = dataToArr
