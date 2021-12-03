@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const dataToArr = require('./task1');
+const dataToArr = require('./helperFunc');
 
 function deepSeaDiving (filePathString) {
     let arr = dataToArr(filePathString) 

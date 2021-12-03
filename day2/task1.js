@@ -1,10 +1,4 @@
-const fs = require('fs')
-
-function dataToArr(filePathString) {
-    let contentString = fs.readFileSync(filePathString).toString();
-    let contentArr = contentString.split(/\n| /)
-    return contentArr
-}
+const dataToArr = require('./helperFunc')
 
 function depthPerception(fileNameString) {
     let arr = dataToArr(fileNameString)
@@ -25,5 +19,3 @@ function depthPerception(fileNameString) {
 }
 
 console.log(depthPerception("data.txt"))
-
-module.exports = dataToArr
