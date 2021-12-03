@@ -2,7 +2,7 @@ const fs = require('fs')
 
 const dataToArr = require('./task1');
 
-function deepSeeDiving (filePathString) {
+function deepSeaDiving (filePathString) {
     let arr = dataToArr(filePathString) 
     const directionArr = arr.filter( direction => direction === 'forward' || direction === 'up' || direction === 'down');
     const digits = /\d/
@@ -24,6 +24,6 @@ function deepSeeDiving (filePathString) {
 }
 
 
-console.log(deepSeeDiving("data.txt"))
+console.log(deepSeaDiving("data.txt"))
 
 
