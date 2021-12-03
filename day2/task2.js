@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-import dataToArr from './task1';
+const dataToArr = require('./task1');
 
 function deepSeeDiving (filePathString) {
     let arr = dataToArr(filePathString) 
